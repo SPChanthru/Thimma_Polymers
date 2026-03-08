@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Thimma Polymer</title>
+  <meta name="description" content="Contact Thimma Polymer for polymer additives and materials. Email, phone, address and enquiry form for industrial buyers and manufacturers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">THIMMA POLYMER</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="industries.html">Industries</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#enquiry" class="header-cta">Send Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We're here to help with product selection and supply solutions.</p>
+      </div>
+    </section>
+
+    <section class="section" id="enquiry">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-info fade-in">
+            <h2>Contact Information</h2>
+            <div class="contact-details">
+              <p><strong>Company</strong> Thimma Polymer</p>
+              <p><strong>Email</strong> <a href="mailto:thimmapolymer@gmail.com" style="color: var(--color-secondary);">thimmapolymer@gmail.com</a></p>
+              <p><strong>Phone</strong> <a href="tel:+919360550560" style="color: var(--color-secondary);">+91-9360550560</a></p>
+              <p><strong>Address</strong> No:69 Varalakshmi Nagar, Maduravoyal, Chennai – 600095</p>
+            </div>
+            <p class="small">Send an enquiry using the form and we'll get back to you promptly.</p>
+          </div>
+          <div class="contact-form-card fade-in">
+            <h3>Send Enquiry</h3>
+            <form action="#" method="post" id="enquiry-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name *</label>
+                <input type="text" id="company" name="company" required placeholder="Company name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Contact Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+              </div>
+              <div class="form-group">
+                <label for="industry">Industry / Application</label>
+                <input type="text" id="industry" name="industry" placeholder="e.g. Automotive, Packaging">
+              </div>
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="City, State">
+              </div>
+              <div class="form-group">
+                <label for="product">Product Requirement</label>
+                <input type="text" id="product" name="product" placeholder="e.g. Coupling agents, Masterbatch">
+              </div>
+              <div class="form-group">
+                <label for="quantity">Estimated Monthly Requirement</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g. MT, kg">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Describe your requirement or question"></textarea>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to be contacted by Thimma Polymer.</label>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn">Submit Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">THIMMA POLYMER</div>
+          <p>Strengthening Products Through Better Polymers. We supply high-quality polymer additives, masterbatches, and raw materials through trusted manufacturing partnerships.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><strong>Email:</strong> thimmapolymer@gmail.com</p>
+          <p><strong>Phone:</strong> +91-9360550560</p>
+          <p><strong>Address:</strong> No:69 Varalakshmi Nagar, Maduravoyal, Chennai – 600095</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Thimma Polymer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for your enquiry. We will get back to you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
